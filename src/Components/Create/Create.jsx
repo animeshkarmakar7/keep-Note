@@ -42,4 +42,3 @@ const Create = ({ onAdd }) => {
 };
 
 export default Create;
-

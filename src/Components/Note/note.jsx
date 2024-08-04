@@ -69,4 +69,3 @@ const Note = ({ items, setItems }) => {
 };
 
 export default Note;
-

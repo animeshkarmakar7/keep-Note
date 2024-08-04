@@ -35,7 +35,7 @@
   .create-input{
     margin-top: 1rem;
   }
-  
+
   .create-input textarea {
     width: 90%;
     height: 100px;
@@ -66,8 +66,35 @@
     margin-top: 10px;
   }
 
-  button{
+ .create-button button{
     width: 10vw;
     height: 4vh;
     padding: 5px;
+    width: 205px;
+   display: flex;
+   font-weight: 500;
+   justify-content: center;
+   align-items: center;
+    border: none;
+    margin-top: 1rem;
+      color: white;
+      padding: 10px;
+   
+      border-radius: 8px;
+      background-color: black;
+      box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                   -6px -6px 10px -1px rgba(255,255,255,0.7);
+      border: 1px solid rgba(0,0,0,0);
+      transition:transform 0.1s;
+    
   }
+
+.create-button button:hover{
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+    -0.5px -0.5px 0px  rgba(255,255,255,1),
+    0.5px 0.5px 0px  rgba(255,255,255,0.15),
+     0px 12px 10px -10px rgba(0,0,0,0.05);
+border: 1px solid rgba(0,0,0,0.01);
+transform: translateY(2px);
+}
