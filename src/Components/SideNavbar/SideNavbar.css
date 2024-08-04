@@ -40,3 +40,15 @@
 .side-navbar ul li:hover {
   background-color: #555;
 }
+
+.sidenav-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebutton{
+  margin-left: 10px;
+  width: 4rem;
+  
+}
