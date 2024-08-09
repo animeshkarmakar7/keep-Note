@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Display = ({ items }) => {
-  if (!items || !Array.isArray(items)) {
+  if (!items || !Array.isArray(items) || items.length === 0) {
     return <div>No items to display</div>;
   }
 
