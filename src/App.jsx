@@ -6,11 +6,30 @@ import Create from './Components/Create/Create';
 import Display from './Components/Display/display';
 import Note from './Components/Note/note';
 import './App.css'; 
+import { useEffect } from 'react';
+import { useRef } from 'react';
+
 
 const App = () => {
+  
+  const isMounted = useRef(false);
+  
   const [items, setItems] = useState([]);
   const [currentItem, setCurrentItem] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
+
+  useEffect(() => {
+    const data = window.localStorage.getItem('data');
+    if (data !== null) setItems(JSON.parse(data))
+  }, [])
+
+  useEffect(() => {
+    if (isMounted.current) {
+      window.localStorage.setItem('data', JSON.stringify(items));
+    } else {
+      isMounted.current = true;
+    }
+  }, [items])
  
 
   const handleDeleteItem = (index) => {
