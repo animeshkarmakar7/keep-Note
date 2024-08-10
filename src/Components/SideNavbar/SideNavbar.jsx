@@ -21,8 +21,8 @@ const SideNavbar = ({items, onDelete , onToggle }) => {
       <button className="toggle-button" style={{color}}  onClick={toggleNavbar}>☰</button>
       <div className={`side-navbar ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li>
-            <Link style={{ textDecoration: 'none' , color:'white' , fontWeight:'800' }} to='/'>Home</Link>
+          <li className='home-link'>
+            <Link style={{ textDecoration: 'none' , color:'white' , fontWeight:'800'  }} to='/'>Home</Link>
           </li>
           <li>
             <Link style={{ textDecoration: 'none' ,color:'white' , fontWeight:'800' }} to='/create'>Create

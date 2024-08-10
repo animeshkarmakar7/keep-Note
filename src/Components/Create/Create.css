@@ -5,6 +5,7 @@
     padding: 20px;
     background-color: #f9f9f9; 
     min-height: 80vh; 
+    margin-left: 3rem;
   }
   
 
@@ -51,12 +52,12 @@
   }
   
   .create-input-title input:focus {
-    border-color: #007bff; 
+    border-color: #0a0a0a; 
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2); 
   }
   
   .create-input input:focus {
-    border-color: #007bff; 
+    border-color: #020202; 
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2); 
   }
   
