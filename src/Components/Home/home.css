@@ -6,3 +6,14 @@ p{
     justify-content: center;
     margin-right: 5rem;
 }
+
+@media (max-width:480px) {
+    p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+        margin-left: -7rem;
+        
+    }
+}
